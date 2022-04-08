@@ -52,19 +52,23 @@ restartButton.addEventListener('click', restart);
 const board = () => {
    boxes.map((box, index) => {
     let addStyle = '';
+    //0,1,2
     if(index < 3){
       addStyle += 'border-bottom: 3px solid var(--board-lines-color);';
     }
+    //2,5,8
     if(index % 3 === 2){
       addStyle += 'border-left: 3px solid var(--board-lines-color);';
     }
+    //0,3,6
     if(index % 3 === 0){
       addStyle += 'border-right: 3px solid var(--board-lines-color);';
     }
+    //6,7,8
     if(index > 5){
       addStyle += 'border-top: 3px solid var(--board-lines-color);';
     }
-    
+    //box.style = "property: value";
     box.style = addStyle;
     
 //////////////////////////////////////////////////////////////////////////
