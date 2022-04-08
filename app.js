@@ -266,18 +266,6 @@ function playerHasWon(board, spot){
   tieGame();
 
   }
-  
-
-// const checkBox = boxes.addEventListener('click', function(){
-//         let id = e.target.id;
-//         console.log(id);
-//         // if(spaces[id] === 'X'){
-//         //     boxes[2].innerText = 'O';
-//         // }
-//     });
-// if(placeholder === 'Computer' && currentPlayer === X_TEXT){
-//   console.log("hello");
-// }
 
 
 
