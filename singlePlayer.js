@@ -1,7 +1,4 @@
-//CHECK CTR F FOR WHAT I NEED TO EDIT (REFACTOR)
 const singlePlayerMode = document.getElementById('onePlayerMode');
-// const realPlayer = document.getElementById('second-player');
-
 
 //When i press the restart button in the 1 player mode, I want all of my settings to default back to 2 player mode
 const singlePlayerRestart = () => {
@@ -19,7 +16,7 @@ const singlePlayerRestart = () => {
   restart();
 }
 
-//When i click single player mode, I want all the settings to defer to single player mode 
+//When i click single player mode, I want all the settings to tailored to single player mode 
 const clickedOnePlayerMode = singlePlayerMode.addEventListener('click', (e) => {
   player1.placeholder = "Computer Player"; 
   
@@ -35,11 +32,13 @@ const clickedOnePlayerMode = singlePlayerMode.addEventListener('click', (e) => {
 if(player1.placeholder === "Computer Player"){
   console.log("COMPUTER");
   console.log(spaces);
+  //the default name for the computer player is 'Computer' but can be changed to anything
   player1.value = "Computer";
   playerOSubmit.addEventListener('click', function(){
     let myPlayer1 = player1.value;
     if(myPlayer1 === ''){
      // playText.style = `font-size: 100px;`
+     //If the computer player is left blank, you will be prompted to enter a computer name
      playText.innerText = 'Enter Computer Name';
   }//EDIT
   if(myPlayer1 !== `` && myPlayer1 !== `Computer`){
