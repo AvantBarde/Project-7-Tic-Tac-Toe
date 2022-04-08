@@ -1,0 +1,87 @@
+:root {
+  --text-color: rgb(167, 158, 158);
+  --reset: 0;
+  --background-color: rgb(0,0,0);
+  --board-lines-color: var(--text-color);
+  --border-value: 3px solid var(-start-board-lines-color);
+}
+
+
+body {
+  margin: var(--reset);
+  padding: var(--reset);
+  color: var(--text-color);
+  font-family: sans-serif;
+  background-color:rgb(26, 26, 26);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  font-size:54px;
+  text-transform: uppercase;
+}
+
+
+
+.container {
+  padding: 40px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#gameboard {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  display: none;
+}
+
+
+#buttonContainer {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#playerInput {
+  display: none;
+  margin-bottom: 5px;
+}
+
+.box {
+  height: 105px;
+  font-size: 60px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  background: var(--background-color);
+  cursor: pointer;
+  
+}
+
+.box:hover{
+  background-color: rgb(32, 32, 34);
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+
+}

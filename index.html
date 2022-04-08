@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = singlePlayer.js defer></script>
+    <script src="app.js" defer></script>
+
+  </head>
+  <body>
+    <!-- //content -->
+    <div class="container">
+      <h1 id="playText">Let's Play</h1></
+      <!-- buttons -->
+      <div id="buttonContainer">
+        <button type = "button" id = "onePlayerMode">1 player mode</button>
+        <button type = "button" id = "twoPlayerMode">2 player mode</button>
+      </div>
+    <!-- input -->
+      <div id="playerInput">
+        <p id = first-player>Player O:<input type="text" id = "player1" placeholder="Enter Player O Name"><button id="submit1">Submit</button></p>
+        <p id = "second-player">Player X:<input type="text" id = "player2" placeholder="Enter Player X Name"><button id="submit2">Submit</button></p>
+     </div>
+
+      <button id="restartBtn">Restart</button>
+      <section id="gameboard">
+        <div class="box" id="0"></div>
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+      </section>
+    </div>   
+  </body>
+</html>
